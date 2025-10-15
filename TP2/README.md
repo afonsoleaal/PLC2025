@@ -2,7 +2,7 @@
 
 Afonso Leal,a108472
 
-## TPC3: Conversor de MarkDown para HTML
+## TPC2: Conversor de MarkDown para HTML
 
 Criar em Python um pequeno conversor de MarkDown para HTML para os elementos descritos na "Basic Syntax" da Cheat Sheet:
 
