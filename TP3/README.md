@@ -9,7 +9,8 @@ Afonso Leal,a108472
 Construir um analisador léxico para uma liguagem de query com a qual se podem escrever frases do
 género:
 
-```# DBPedia: obras de Chuck Berry 
+```
+# DBPedia: obras de Chuck Berry 
 select ?nome ?desc where {
 ?s a dbo:MusicalArtist.
 ?s foaf:name "Chuck Berry"@en .
