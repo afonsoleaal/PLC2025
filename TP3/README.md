@@ -17,4 +17,5 @@ select ?nome ?desc where {
 ?w dbo:artist ?s.
 ?w foaf:name ?nome.
 ?w dbo:abstract ?desc
-} LIMIT 1000```
+} LIMIT 1000
+```
