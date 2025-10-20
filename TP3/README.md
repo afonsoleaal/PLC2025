@@ -19,3 +19,6 @@ select ?nome ?desc where {
 ?w dbo:abstract ?desc
 } LIMIT 1000
 ```
+
+[Resolução](./tpc3.py)
+
