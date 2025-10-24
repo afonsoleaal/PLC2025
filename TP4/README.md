@@ -52,3 +52,5 @@ Use a imaginação e criatividade e tente contemplar todos os cenários, por exe
 stock vazio.
 Como extra pode adicionar um comando para adicionar alguns produtos ao stock existente (produtos
 novos ou já existentes).
+
+[Resolução](./tpc4.py)
