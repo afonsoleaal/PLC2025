@@ -23,7 +23,7 @@ Este projeto consiste no desenvolvimento de um compilador para a linguagem Pasca
 O objetivo deste projeto é que os alunos desenvolvam um compilador para a linguagem Pascal standard.
 
 O compilador deverá ser capaz de analisar, interpretar e traduzir código Pascal standard para um formato intermediário e deste para o código máquina ou diretamente para o código máquina,
-neste caso da [VM disponiblisada aos alunos](https://ewvm.epl.di.uminho.pt).
+neste caso da [VM disponibilisada aos alunos](https://ewvm.epl.di.uminho.pt).
 
 ---
 
