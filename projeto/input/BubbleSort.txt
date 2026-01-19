@@ -1,0 +1,35 @@
+program BubbleSort;
+var
+  numeros: array[1..5] of integer;
+  i, j, temp: integer;
+begin
+  writeln('--- Introduza 5 números inteiros ---');
+  
+  { INPUT SECTION: Loop to ask user for numbers }
+  for i := 1 to 5 do
+  begin
+    writeln('Digite o número ', i, ':');
+    readln(numeros[i]);
+  end;
+
+  writeln('A ordenar...');
+   
+  { SORTING LOGIC: Bubble Sort }
+  for i := 1 to 4 do
+  begin
+    for j := 1 to 5 - i do
+    begin
+      if numeros[j] > numeros[j+1] then
+      begin
+        temp := numeros[j];
+        numeros[j] := numeros[j+1];
+        numeros[j+1] := temp;
+      end;
+    end;
+  end;
+
+  { OUTPUT SECTION: Print results }
+  writeln('Valores ordenados:');
+  for i := 1 to 5 do
+    writeln(numeros[i]);
+end.

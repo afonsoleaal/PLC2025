@@ -1,0 +1,138 @@
+start
+	pushi 5
+	allocn
+	storeg 0
+	pushi 0
+	storeg 1
+	pushi 0
+	storeg 2
+	pushi 0
+	storeg 3
+	jump MAIN
+MAIN:
+	pushs "--- Introduza 5 números inteiros ---"
+	writes
+	writeln
+	pushi 1
+	storeg 1
+L1:
+	pushg 1
+	pushi 5
+	infeq
+	jz L2
+	pushs "Digite o número "
+	writes
+	pushg 1
+	writei
+	pushs ":"
+	writes
+	writeln
+	pushg 0
+	pushg 1
+	pushi 1
+	sub
+	read
+	atoi
+	storen
+	pushg 1
+	pushi 1
+	add
+	storeg 1
+	jump L1
+L2:
+	pushs "A ordenar..."
+	writes
+	writeln
+	pushi 1
+	storeg 1
+L3:
+	pushg 1
+	pushi 4
+	infeq
+	jz L4
+	pushi 1
+	storeg 2
+L5:
+	pushg 2
+	pushi 5
+	pushg 1
+	sub
+	infeq
+	jz L6
+	pushg 0
+	pushg 2
+	pushi 1
+	sub
+	loadn
+	pushg 0
+	pushg 2
+	pushi 1
+	add
+	pushi 1
+	sub
+	loadn
+	sup
+	jz L7
+	pushg 0
+	pushg 2
+	pushi 1
+	sub
+	loadn
+	storeg 3
+	pushg 0
+	pushg 2
+	pushi 1
+	sub
+	pushg 0
+	pushg 2
+	pushi 1
+	add
+	pushi 1
+	sub
+	loadn
+	storen
+	pushg 0
+	pushg 2
+	pushi 1
+	add
+	pushi 1
+	sub
+	pushg 3
+	storen
+L7:
+	pushg 2
+	pushi 1
+	add
+	storeg 2
+	jump L5
+L6:
+	pushg 1
+	pushi 1
+	add
+	storeg 1
+	jump L3
+L4:
+	pushs "Valores ordenados:"
+	writes
+	writeln
+	pushi 1
+	storeg 1
+L8:
+	pushg 1
+	pushi 5
+	infeq
+	jz L9
+	pushg 0
+	pushg 1
+	pushi 1
+	sub
+	loadn
+	writei
+	writeln
+	pushg 1
+	pushi 1
+	add
+	storeg 1
+	jump L8
+L9:
+stop
